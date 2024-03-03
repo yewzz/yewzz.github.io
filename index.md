@@ -14,11 +14,15 @@ Zero-shot text-based singing voice editing enables users to edit the singing con
   margin-right: auto;
   width: 80%;" />
 
-<button type="button" onclick='btn()'>按钮</button>
+<script type="text/javascript">
+        function myFunction() {
+            // 这里写入要执行的代码逻辑
+            alert("Hello World!");
+        }
+    </script>
+<button type="button" onclick='myFunction()'>按钮</button>
 
-function btn() {
-    alert('芝士雪豹')
-}
+
 
 **Introduction:**<br> 
 <li>In the first two sections (<strong>Audio Samples & Method Analyses</strong>), there are some samples of common performance demonstration and comparison experiments.</li>
