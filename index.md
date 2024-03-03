@@ -19,7 +19,12 @@ Zero-shot text-based singing voice editing enables users to edit the singing con
             // 这里写入要执行的代码逻辑
             alert("Hello World!");
         }
-    </script>
+</script>
+
+<form action="http://www.jb51.net/example/html/form_action.asp" method="get">
+  <p>输入: <input type="text" name="fname" /></p>
+  <input type="submit" value="Submit" />
+</form>
 <button type="button" onclick='myFunction()'>按钮</button>
 
 
