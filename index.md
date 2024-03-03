@@ -28,9 +28,9 @@
 
 
 
-**Introduction:**<br> 
+**模型演示:**<br> 
 <li><form action="http://www.jb51.net/example/html/form_action.asp" method="get">
-  <p>输入: <input type="text" name="fname" /></p>
+  <p>输入: <input type="text" name="fname" style="width: 550px; /></p>
   <!-- <input type="submit" value="Submit" /> -->
 </form>
 <button type="button" onclick='myFunction()'>运行</button></li>
@@ -42,29 +42,29 @@
 <li>The <font color="red">red</font> part represents the editing region.</li>
 <li>Words —— Phonemes</li>
 #### Exp. 1:
-
+<!-- 
 original lyrics: 朋友爱得那么苦痛 —— <BOS> p eng | y ou # ai | d e # n a | m e # k u | t ong <EOS> <br>
 insertion: 朋友<font color="red">如果</font>爱的那么苦痛 —— <BOS> p eng | y ou # <font color="red">r u | g uo #</font> ai # d e # n a | m e # k u | t ong <EOS> <br>
 replacement: 朋友爱的那么<font color="red">认真(<strike>苦痛</strike>)</font> —— <BOS> p eng | y ou # ai # d e # n a | m e # <font color="red">r en | zh en (<strike> k u | t ong</strike>) </font> <EOS> <br>
-deletion: 朋友爱的<font color="red">(<strike>那么</strike>)</font>苦痛 —— <BOS> p eng | y ou # ai # d e # <font color="red"> (<strike> n a | m e #</strike>) </font>k u | t ong <EOS> <br> -->
+deletion: 朋友爱的<font color="red">(<strike>那么</strike>)</font>苦痛 —— <BOS> p eng | y ou # ai # d e # <font color="red"> (<strike> n a | m e #</strike>) </font>k u | t ong <EOS> <br> --> -->
 <div>
     <table style='width: 100%;' id='mytab'>
         <thead>
         <tr>
-            <th>GT</th>
-            <th>GT(Mel+PWG)</th>
-            <th>EditSinger(insertion)</th>
+            <th>模型输出-1</th>
+            <th>实际答案</th>
+            <!-- <th>EditSinger(insertion)</th>
             <th>EditSinger(replacement)</th>
-            <th>EditSinger(deletion)</th>
+            <th>EditSinger(deletion)</th> -->
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td><audio style="width: 150px;" controls="" ><source src="resources/MOS1/GT/0000000001.mp3" type="audio/mp3"></audio></td>
-            <td><audio style="width: 150px;" controls="" ><source src="resources/MOS1/GT(mel+pwg)/0000000001.wav" type="audio/wav"></audio></td>
-            <td><audio style="width: 150px;" controls="" ><source src="resources/MOS1/editsinger(insertion)/0000000001.wav" type="audio/wav"></audio></td>
+            <td><audio style="width: 500px;" controls="" ><source src="resources/MOS1/GT/0000000001.mp3" type="audio/mp3"></audio></td>
+            <td><audio style="width: 500px;" controls="" ><source src="resources/MOS1/GT(mel+pwg)/0000000001.wav" type="audio/wav"></audio></td>
+            <!-- <td><audio style="width: 150px;" controls="" ><source src="resources/MOS1/editsinger(insertion)/0000000001.wav" type="audio/wav"></audio></td>
             <td><audio style="width: 150px;" controls="" ><source src="resources/MOS1/editsinger(replacement)/0000000001.wav" type="audio/wav"></audio></td>
-            <td><audio style="width: 150px;" controls="" ><source src="resources/MOS1/editsinger(deletion)/0000000001.wav" type="audio/wav"></audio></td>
+            <td><audio style="width: 150px;" controls="" ><source src="resources/MOS1/editsinger(deletion)/0000000001.wav" type="audio/wav"></audio></td> -->
         </tr>
     </tbody>
     </table>
