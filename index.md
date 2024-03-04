@@ -15,26 +15,28 @@
   width: 80%;" /> -->
 
 <script type="text/javascript">
-        function myFunction() {
-            // 这里写入要执行的代码逻辑
-            // alert("Hello World!");
-            var table = document.getElementById("mytab");
-            var td1=table.getElementsByTagName("tr").item(1).getElementsByTagName("td").item(1)
-            td1.innerHTML = '运行的结果'
-        }
+        // function myFunction() {
+        //     // 这里写入要执行的代码逻辑
+        //     // alert("Hello World!");
+        //     var table = document.getElementById("mytab");
+        //     var td1=table.getElementsByTagName("tr").item(1).getElementsByTagName("td").item(1)
+        //     td1.innerHTML = '运行的结果'
+        // }
 
         function progress() {
             var bar = document.querySelector('.progress');
             var width = 0;
             var id = setInterval(frame, 10);
             function frame() {
-            if (width >= 100) {
-                clearInterval(id);
-            } else {
-                width++;
-                bar.style.width = width + '%';
+                if (width >= 100) {
+                    clearInterval(id);
+                } else {
+                    width++;
+                    bar.style.width = width + '%';
             }
+            myFunction()
         }
+        
   }
 </script>
 
@@ -43,11 +45,11 @@
 
 
 **模型演示:**<br> 
-<form action="http://www.jb51.net/example/html/form_action.asp" method="get">
-  <p>输入: <input type="text" name="fname" style="width: 550px;" /></p>
+<form  method="get">
+  <p>输入: <input type="text" name="fname" style="width: 550px;" /> <button type="button" onclick='progress()'>运行</button></p>
   <!-- <input type="submit" value="Submit" /> -->
 </form>
-<button type="button" onclick='myFunction(); progress()'>运行</button>
+
 
 <div class="progress-bar">
   <div class="progress"></div>
@@ -67,9 +69,9 @@
         </thead>
         <tbody>
         <tr>
-            <td width="200px"></td>
-            <td width="200px"></td>
-            <td width="200px"></td>
+            <td width="400px" height="400px"></td>
+            <td width="400px" height="400px"></td>
+            <td width="400px" height="400px"></td>
             <!-- <td><audio style="width: 150px;" controls="" ><source src="resources/MOS1/editsinger(insertion)/0000000001.wav" type="audio/wav"></audio></td>
             <td><audio style="width: 150px;" controls="" ><source src="resources/MOS1/editsinger(replacement)/0000000001.wav" type="audio/wav"></audio></td>
             <td><audio style="width: 150px;" controls="" ><source src="resources/MOS1/editsinger(deletion)/0000000001.wav" type="audio/wav"></audio></td> -->
