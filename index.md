@@ -20,9 +20,13 @@
             // alert("Hello World!");
             var table = document.getElementById("mytab");
             var td1=table.getElementsByTagName("tr").item(1).getElementsByTagName("td").item(1)
-            td1.innerHTML = '```python\n print'
+            td1.innerHTML = '<pre><code class="language-python">
+                def hello_world():
+                    print("Hello, World!")
+                hello_world()
+            </code></pre>'
         }
-
+        
         function progress() {
             var bar = document.querySelector('.progress');
             var width = 0;
