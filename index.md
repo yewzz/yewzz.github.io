@@ -30,24 +30,24 @@
             // XML数据（这里只作为示例）
             var xmlString = "<access-lists><access-list><name>BlockEntertainment</name><aces><ace><name>DenyEntertainmentSite1</name><matches><ipv4><destination-ip-address>220.181.38.148</destination-ip-address></ipv4></matches><actions><forwarding>drop</forwarding></actions></ace><!-- Add more ACEs for other entertainment sites --></aces></access-list></access-lists>";
 
-            xmlString = "&lt;access-lists&gt;
-&lt;access-list&gt;
-&lt;name&gt;BlockEntertainment&lt;/name&gt;
-&lt;aces&gt;
-&lt;ace&gt;
-&lt;name&gt;DenyEntertainmentSite1&lt;/name&gt;
-&lt;matches&gt;
-&lt;ipv4&gt;
-&lt;destination-ip-address&gt;220.181.38.148&lt;/destination-ip-address&gt;
-&lt;/ipv4&gt;
-&lt;/matches&gt;
-&lt;actions&gt;
-&lt;forwarding&gt;drop&lt;/forwarding&gt;
-&lt;/actions&gt;
-&lt;/ace&gt;
-&lt;!-- Add more ACEs for other entertainment sites --&gt;
-&lt;/aces&gt;
-&lt;/access-list&gt;
+            xmlString = "&lt;access-lists&gt;\n
+\t&lt;access-list&gt;\n
+\t\t&lt;name&gt;BlockEntertainment&lt;/name&gt;\n
+\t\t&lt;aces&gt;\n
+\t\t\t&lt;ace&gt;\n
+\t\t\t\t&lt;name&gt;DenyEntertainmentSite1&lt;/name&gt;\n
+\t\t\t\t&lt;matches&gt;\n
+\t\t\t\t\t&lt;ipv4&gt;\n
+\t\t\t\t\t\t&lt;destination-ip-address&gt;220.181.38.148&lt;/destination-ip-address&gt;\n
+\t\t\t\t\t&lt;/ipv4&gt;\n
+\t\t\t\t&lt;/matches&gt;\n
+\t\t\t\t&lt;actions&gt;\n
+\t\t\t\t\t&lt;forwarding&gt;drop&lt;/forwarding&gt;\n
+\t\t\t\t&lt;/actions&gt;\n
+\t\t\t&lt;/ace&gt;\n
+\t\t\t&lt;!-- Add more ACEs for other entertainment sites --&gt;\n
+\t\t&lt;/aces&gt;\n
+\t&lt;/access-list&gt;\n
 &lt;/access-lists&gt;";
             
             <!-- // 创建DOMParser对象
