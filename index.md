@@ -65,15 +65,15 @@
 </form>
 
 
-<div class="progress-bar" style="margin-top:10px; margin-bottom:20px">
+<div class="progress-bar" style="margin-top:10px; margin-bottom:20px; margin-left:50px">
   <div class="progress" id="progress1"></div>
 </div>
 
-<div>
+<div style="margin-left:50px">
     <table style='width: 100%;' id='mytab'>
         <thead>
         <tr>
-            <th width="800px">模型输出-1</th>
+            <th width="800px">模型输出-1 </th>
             <!-- <th width="400px">模型输出-2</th>
             <th width="400px">实际答案</th> -->
         </tr>
@@ -89,11 +89,13 @@
     </table>
 </div>
 
-<div class="progress-bar" style="margin-top:10px; margin-bottom:20px">
+<div class="progress-bar" style="margin-top:10px; margin-bottom:20px; margin-left:50px">
   <div class="progress" id="progress2"></div>
 </div>
 
-<div>
+ <button style="width:800px; height:50px; border: none; border-radius: 10px; font-family: sans-serif;margin-left:50px" type="button" onclick='progress()' >转化</button>
+
+<div style="margin-left:50px">
     <table style='width: 100%;' id='mytab2'>
         <thead>
         <tr>
