@@ -72,9 +72,9 @@
     <table style='width: 100%;' id='mytab'>
         <thead>
         <tr>
-            <th>模型输出-1</th>
-            <th>模型输出-2</th>
-            <th>实际答案</th>
+            <th width="400px">模型输出-1</th>
+            <th width="400px">模型输出-2</th>
+            <th width="400px">实际答案</th>
         </tr>
         </thead>
         <tbody>
