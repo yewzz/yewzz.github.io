@@ -42,7 +42,7 @@
                     clearInterval(id);
                     myFunction();
                 } 
-                elif (width >= 150) {
+                else if (width >= 150) {
                     clearInterval(id);
                     myFunction2();
                 }
