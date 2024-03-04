@@ -23,7 +23,7 @@
 
             code1 = 'print("hello world1")'
             code2 =  'print("hello world2")'
-            defined_content = '<pre>' + code1 + '\n' + code2 '</pre>'
+            defined_content = '<pre>' + code1 + '\n' + code2 + '</pre>'
             td1.innerHTML = defined_content
         }
         
