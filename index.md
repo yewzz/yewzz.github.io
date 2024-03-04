@@ -15,13 +15,13 @@
   width: 80%;" /> -->
 
 <script type="text/javascript">
-        // function myFunction() {
-        //     // 这里写入要执行的代码逻辑
-        //     // alert("Hello World!");
-        //     var table = document.getElementById("mytab");
-        //     var td1=table.getElementsByTagName("tr").item(1).getElementsByTagName("td").item(1)
-        //     td1.innerHTML = '运行的结果'
-        // }
+        function myFunction() {
+            // 这里写入要执行的代码逻辑
+            // alert("Hello World!");
+            var table = document.getElementById("mytab");
+            var td1=table.getElementsByTagName("tr").item(1).getElementsByTagName("td").item(1)
+            td1.innerHTML = '```python\n print('hello world)'
+        }
 
         function progress() {
             var bar = document.querySelector('.progress');
