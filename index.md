@@ -38,8 +38,7 @@
             var width = 0;
             var id = setInterval(frame, 10);
             function frame() {
-                if (width >= 50) {
-                   
+                if (width == 50) {
                     myFunction();
                 } 
                 else if (width >= 100) {
