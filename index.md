@@ -9,10 +9,6 @@
   margin-right: auto;
   width: 80%;" />
 
-<!-- <img align="center" src="resources/model.png" style="  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;" /> -->
 
 <script type="text/javascript">
         function myFunction() {
@@ -26,6 +22,16 @@
             defined_content = '<pre>' + code1 + '\n' + code2 + '</pre>'
             td1.innerHTML = defined_content
         }
+
+        function myFunction2() {
+            var table = document.getElementById("mytab");
+            var td1=table.getElementsByTagName("tr").item(1).getElementsByTagName("td").item(1)
+
+            code1 = 'print("hello world3")'
+            code2 =  'print("hello world4")'
+            defined_content = '<pre>' + code1 + '\n' + code2 + '</pre>'
+            td1.innerHTML = defined_content
+        }
         
         function progress() {
             var bar = document.querySelector('.progress');
@@ -35,7 +41,12 @@
                 if (width >= 100) {
                     clearInterval(id);
                     myFunction()
-                } else {
+                } 
+                elif (width >= 150) {
+                    clearInterval(id);
+                    myFunction2()
+                }
+                else {
                     width++;
                     bar.style.width = width + '%';
                 }
@@ -44,9 +55,6 @@
         
   
 </script>
-
-
-
 
 
 **模型演示:**<br> 
@@ -67,9 +75,6 @@
             <th>模型输出-1</th>
             <th>模型输出-2</th>
             <th>实际答案</th>
-            <!-- <th>EditSinger(insertion)</th>
-            <th>EditSinger(replacement)</th>
-            <th>EditSinger(deletion)</th> -->
         </tr>
         </thead>
         <tbody>
@@ -77,9 +82,7 @@
             <td width="400px" height="400px"></td>
             <td width="400px" height="400px"></td>
             <td width="400px" height="400px"></td>
-            <!-- <td><audio style="width: 150px;" controls="" ><source src="resources/MOS1/editsinger(insertion)/0000000001.wav" type="audio/wav"></audio></td>
-            <td><audio style="width: 150px;" controls="" ><source src="resources/MOS1/editsinger(replacement)/0000000001.wav" type="audio/wav"></audio></td>
-            <td><audio style="width: 150px;" controls="" ><source src="resources/MOS1/editsinger(deletion)/0000000001.wav" type="audio/wav"></audio></td> -->
+
         </tr>
     </tbody>
     </table>
