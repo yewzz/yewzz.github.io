@@ -20,7 +20,7 @@
             // alert("Hello World!");
             var table = document.getElementById("mytab");
             var td1=table.getElementsByTagName("tr").item(1).getElementsByTagName("td").item(1)
-            td1.innerHTML = '```python\n print('hello world)'
+            td1.innerHTML = '```python\n print('hello world')'
         }
 
         function progress() {
@@ -33,11 +33,12 @@
                 } else {
                     width++;
                     bar.style.width = width + '%';
+                }
             }
             myFunction()
         }
         
-  }
+  
 </script>
 
 
