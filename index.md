@@ -19,9 +19,10 @@
             // 这里写入要执行的代码逻辑
             // alert("Hello World!");
             var table = document.getElementById("mytab");
-            var td1=table.getElementsByTagName("tr").item(1).getElementsByTagName("td").item(1)
+            var td1=table.getElementsByTagName("tr").item(1).getElementsByTagName("td").item(0)
 
-            code = 'print'
+            code = 'print("hello world1)\n
+                    print("hello world2)'
             defined_content = '<pre>' + code + '</pre>'
             td1.innerHTML = defined_content
         }
@@ -33,12 +34,12 @@
             function frame() {
                 if (width >= 100) {
                     clearInterval(id);
+                    myFunction()
                 } else {
                     width++;
                     bar.style.width = width + '%';
                 }
             }
-            myFunction()
         }
         
   
