@@ -40,11 +40,11 @@
             function frame() {
                 if (width >= 100) {
                     clearInterval(id);
-                    myFunction()
+                    myFunction();
                 } 
                 elif (width >= 150) {
                     clearInterval(id);
-                    myFunction2()
+                    myFunction2();
                 }
                 else {
                     width++;
