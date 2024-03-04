@@ -35,7 +35,7 @@
             
             // 将XML字符串转换为XML DOM对象
             var xmlDoc = parser.parseFromString(xmlString, "text/xml");
-            alert(xmlDoc)
+            alert(xmlDoc.documentElement)
             
             td1.innerHTML = xmlDoc.documentElement.outerHTML
         }
