@@ -60,12 +60,12 @@
 ## 模型演示 
 <form  method="get">
   <p><input type="text" name="fname" value="请输入..." style="width: 800px;height:200px" /> </p>
-  <button style="width:800px;background: #4CAF50;- border: none;" type="button" onclick='progress()' >运行</button>
+  <button style="width:800px;background: #4CAF50; border: none; font-family: sans-serif;" type="button" onclick='progress()' >运行</button>
   <!-- <input type="submit" value="Submit" /> -->
 </form>
 
 
-<div class="progress-bar" margin-top="10px" margin-bottom="20px">
+<div class="progress-bar" style="margin-top:10px; margin-bottom:20px">
   <div class="progress" id="progress1"></div>
 </div>
 
@@ -89,7 +89,7 @@
     </table>
 </div>
 
-<div class="progress-bar" margin-top="10px" margin-bottom="20px">
+<div class="progress-bar" style="margin-top:10px; margin-bottom:20px">
   <div class="progress" id="progress2"></div>
 </div>
 
