@@ -59,8 +59,8 @@
 
 ## 模型演示 
 <form  method="get">
-  <p><input type="text" name="fname" value="请输入..." style="width: 800px;height:200px" /> </p>
-  <button style="width:800px;background: #4CAF50; border: none; font-family: sans-serif;" type="button" onclick='progress()' >运行</button>
+  <p><input type="text" name="fname" value="请输入..." style="width: 600px;height:200px" />   <button style="width:200px; height:200px; border: none; border-radius: 10px; font-family: sans-serif;" type="button" onclick='progress()' >运行</button></p>
+ 
   <!-- <input type="submit" value="Submit" /> -->
 </form>
 
