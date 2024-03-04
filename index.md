@@ -34,7 +34,7 @@
         }
         
         function progress() {
-            var bar = document.querySelector('.progress');
+            var bar = document.getElementById("progress1");
             var width = 0;
             var id = setInterval(frame, 10);
             function frame() {
@@ -65,23 +65,47 @@
 
 
 <div class="progress-bar">
-  <div class="progress"></div>
+  <div class="progress" id="progress1"></div>
 </div>
 
 <div>
     <table style='width: 100%;' id='mytab'>
         <thead>
         <tr>
-            <th width="400px">模型输出-1</th>
-            <th width="400px">模型输出-2</th>
-            <th width="400px">实际答案</th>
+            <th width="800px">模型输出-1</th>
+            <!-- <th width="400px">模型输出-2</th>
+            <th width="400px">实际答案</th> -->
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td width="400px" height="400px"></td>
-            <td width="400px" height="400px"></td>
-            <td width="400px" height="400px"></td>
+            <td width="800px" height="400px"></td>
+            <!-- <td width="400px" height="400px"></td>
+            <td width="400px" height="400px"></td> -->
+
+        </tr>
+    </tbody>
+    </table>
+</div>
+
+<div class="progress-bar">
+  <div class="progress" id="progress2"></div>
+</div>
+
+<div>
+    <table style='width: 100%;' id='mytab2'>
+        <thead>
+        <tr>
+            <th width="800px">模型输出-2</th>
+            <!-- <th width="400px">模型输出-2</th>
+            <th width="400px">实际答案</th> -->
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td width="800px" height="400px"></td>
+            <!-- <td width="400px" height="400px"></td>
+            <td width="400px" height="400px"></td> -->
 
         </tr>
     </tbody>
