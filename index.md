@@ -27,20 +27,34 @@
             var table = document.getElementById("mytab2");
             var td1=table.getElementsByTagName("tr").item(1).getElementsByTagName("td").item(0)
 
-            var table="<table><tr><th>标题1</th><th>标题2</th><th>标题3</th></tr>";
-            var x = xmlDoc.getElementsByTagName("标签名");
-            for (i = 0; i <x.length; i++) {
-                table += "<tr><td>" +
-                x[i].getElementsByTagName("标签名")[0].childNodes[0].nodeValue +
-                "</td><td>" +
-                x[i].getElementsByTagName("标签名")[1].childNodes[0].nodeValue +
-                "</td><td>" +
-                x[i].getElementsByTagName("标签名")[2].childNodes[0].nodeValue +
-                "</td></tr>";
-            }
-            table += "</table>";
+            // XML数据（这里只作为示例）
+            var xmlString = "<access-lists>
+                                <access-list>
+                                    <name>BlockEntertainment</name>
+                                    <aces>
+                                    <ace>
+                                        <name>DenyEntertainmentSite1</name>
+                                        <matches>
+                                        <ipv4>
+                                            <destination-ip-address>220.181.38.148</destination-ip-address>
+                                        </ipv4>
+                                        </matches>
+                                        <actions>
+                                        <forwarding>drop</forwarding>
+                                        </actions>
+                                    </ace>
+                                    <!-- Add more ACEs for other entertainment sites -->
+                                    </aces>
+                                </access-list>
+                                </access-lists>";
             
-            td1.innerHTML = table
+            // 创建DOMParser对象
+            var parser = new DOMParser();
+            
+            // 将XML字符串转换为XML DOM对象
+            var xmlDoc = parser.parseFromString(xmlString, "text/xml");
+            
+            td1.innerHTML = xmlDoc.documentElement.outerHTML
         }
         
         function progress() {
