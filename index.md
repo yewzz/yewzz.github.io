@@ -29,11 +29,15 @@
 
 
 **模型演示:**<br> 
-<li><form action="http://www.jb51.net/example/html/form_action.asp" method="get">
+<form action="http://www.jb51.net/example/html/form_action.asp" method="get">
   <p>输入: <input type="text" name="fname" style="width: 550px;" /></p>
   <!-- <input type="submit" value="Submit" /> -->
 </form>
-<button type="button" onclick='myFunction()'>运行</button></li>
+<button type="button" onclick='myFunction()'>运行</button>
+
+<div class="progress-bar">
+  <div class="progress"></div>
+</div>
 
 <div>
     <table style='width: 100%;' id='mytab'>
@@ -49,9 +53,9 @@
         </thead>
         <tbody>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td width="200px"></td>
+            <td width="200px"></td>
+            <td width="200px"></td>
             <!-- <td><audio style="width: 150px;" controls="" ><source src="resources/MOS1/editsinger(insertion)/0000000001.wav" type="audio/wav"></audio></td>
             <td><audio style="width: 150px;" controls="" ><source src="resources/MOS1/editsinger(replacement)/0000000001.wav" type="audio/wav"></audio></td>
             <td><audio style="width: 150px;" controls="" ><source src="resources/MOS1/editsinger(deletion)/0000000001.wav" type="audio/wav"></audio></td> -->
