@@ -27,13 +27,9 @@
             var table = document.getElementById("mytab2");
             var td1=table.getElementsByTagName("tr").item(1).getElementsByTagName("td").item(0)
 
-            code1 = '&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
-            &lt;root&gt;&lt;element attribute=&quot;value&quot;&gt;Content&lt;/element&gt;
-            &lt;/root&gt;'
+            code1 = '&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;&lt;root&gt;&lt;element attribute=&quot;value&quot;&gt;Content&lt;/element&gt;&lt;/root&gt;'
 
-            code2 = '&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;
-            &lt;root&gt;&lt;element attribute=&quot;value&quot;&gt;Content&lt;/element&gt;
-            &lt;/root&gt;'
+            code2 = '&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;&lt;root&gt;&lt;element attribute=&quot;value&quot;&gt;Content&lt;/element&gt;&lt;/root&gt;'
             
             defined_content = '<pre><code>' + code1 + '\n' + code2 + '</pre></code>'
             td1.innerHTML = defined_content
@@ -77,7 +73,7 @@
 
 ## 模型演示 
 <form  method="get">
-  <p><input type="text" name="fname" value="请输入..." style="width: 600px;height:200px; margin-left:100px" />   <button style="width:200px; height:200px; border: none; border-radius: 10px; font-family: sans-serif;" type="button" onclick='progress()' >运行</button></p>
+  <p><input type="text" name="fname" value="请输入..." style="width: 600px;height:200px; margin-left:100px" />   <button style="width:200px; height:200px; border: none; border-radius: 10px; font-family: sans-serif;" type="button" onclick='progress()' >1. 运行</button></p>
  
   <!-- <input type="submit" value="Submit" /> -->
 </form>
@@ -109,7 +105,7 @@
 
 
 
- <button style="width:800px; height:50px; border: none; border-radius: 10px; font-family: sans-serif;margin-left:100px" type="button" onclick='progress2()' >转化</button>
+ <button style="width:800px; height:50px; border: none; border-radius: 10px; font-family: sans-serif;margin-left:100px" type="button" onclick='progress2()' >2. 转化</button>
 
  <div class="progress-bar" style="margin-top:10px; margin-bottom:20px; margin-left:100px">
   <div class="progress" id="progress2"></div>
