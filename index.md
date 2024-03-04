@@ -28,25 +28,7 @@
             var td1=table.getElementsByTagName("tr").item(1).getElementsByTagName("td").item(0)
 
             // XML数据（这里只作为示例）
-            var xmlString = "<access-lists>
-                                <access-list>
-                                    <name>BlockEntertainment</name>
-                                    <aces>
-                                    <ace>
-                                        <name>DenyEntertainmentSite1</name>
-                                        <matches>
-                                        <ipv4>
-                                            <destination-ip-address>220.181.38.148</destination-ip-address>
-                                        </ipv4>
-                                        </matches>
-                                        <actions>
-                                        <forwarding>drop</forwarding>
-                                        </actions>
-                                    </ace>
-                                    <!-- Add more ACEs for other entertainment sites -->
-                                    </aces>
-                                </access-list>
-                                </access-lists>";
+            var xmlString = "<access-lists><access-list><name>BlockEntertainment</name><aces><ace><name>DenyEntertainmentSite1</name><matches><ipv4><destination-ip-address>220.181.38.148</destination-ip-address></ipv4></matches><actions><forwarding>drop</forwarding></actions></ace><!-- Add more ACEs for other entertainment sites --></aces></access-list></access-lists>";
             
             // 创建DOMParser对象
             var parser = new DOMParser();
