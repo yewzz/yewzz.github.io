@@ -32,20 +32,7 @@
 
             xmlString = "&lt;access-lists&gt;\n\t&lt;access-list&gt;\n\t\t&lt;name&gt;BlockEntertainment&lt;/name&gt;\n\t\t&lt;aces&gt;\n\t\t\t&lt;ace&gt;\n\t\t\t\t&lt;name&gt;DenyEntertainmentSite1&lt;/name&gt;\n\t\t\t\t&lt;matches&gt;\n\t\t\t\t\t&lt;ipv4&gt;\n\t\t\t\t\t\t&lt;destination-ip-address&gt;220.181.38.148&lt;/destination-ip-address&gt;\n\t\t\t\t\t&lt;/ipv4&gt;\n\t\t\t\t&lt;/matches&gt;\n\t\t\t\t&lt;actions&gt;\n\t\t\t\t\t&lt;forwarding&gt;drop&lt;/forwarding&gt;\n\t\t\t\t&lt;/actions&gt;\n\t\t\t&lt;/ace&gt;\n\t\t\t&lt;!-- Add more ACEs for other entertainment sites --&gt;\n\t\t&lt;/aces&gt;\n\t&lt;/access-list&gt;\n&lt;/access-lists&gt;";
             
-            <!-- // 创建DOMParser对象
-            var parser = new DOMParser();
-            
-            // 将XML字符串转换为XML DOM对象
-            var xmlDoc = parser.parseFromString(xmlString, "text/xml");
-            <!-- alert(xmlDoc.documentElement.innerHTML) -->
-
-            var table_content="<table><tr><th width='200px'>name1</th><th width='200px'>name2</th><th width='200px'>ipv4</th><th width='200px'>action</th></tr>";
-            <!-- var x = xmlDoc.getElementsByTagName("标签名"); -->
-            
-            table_content += "<tr><td>" + 'BlockEntertainment' +
-            "</td><td>" + 'DenyEntertainmentSite1' + "</td><td>" + '220.181.38.148' + "</td><td>" + "drop" + "</td></tr>" ;
-            
-            table_content += "</table>"; -->
+           
             
             defined_content = '<pre><code>' + xmlString + '</code></pre>'
             td1.innerHTML = defined_content
