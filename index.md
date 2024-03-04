@@ -37,10 +37,10 @@
             var xmlDoc = parser.parseFromString(xmlString, "text/xml");
             alert(xmlDoc.documentElement.innerHTML)
 
-            var table_content="<table><tr><th>name1</th><th>name2</th><th>ipv4</th><th>drop</th></tr>";
+            var table_content="<table><tr><th width="200px">name1</th><th width="200px">name2</th><th width="200px">ipv4</th><th width="200px">drop</th></tr>";
             <!-- var x = xmlDoc.getElementsByTagName("标签名"); -->
             
-            table += "<tr><td>" + 'BlockEntertainment' +
+            table_content += "<tr><td>" + 'BlockEntertainment' +
             "</td><td>" + 'DenyEntertainmentSite1' + "</td><td>" + '220.181.38.148' + "</td><td>" + "drop" + "</td></tr>" ;
             
             table_content += "</table>";
