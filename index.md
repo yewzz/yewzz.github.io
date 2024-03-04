@@ -27,12 +27,20 @@
             var table = document.getElementById("mytab2");
             var td1=table.getElementsByTagName("tr").item(1).getElementsByTagName("td").item(0)
 
-            code1 = '&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;&lt;root&gt;&lt;element attribute=&quot;value&quot;&gt;Content&lt;/element&gt;&lt;/root&gt;'
-
-            code2 = '&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt;&lt;root&gt;&lt;element attribute=&quot;value&quot;&gt;Content&lt;/element&gt;&lt;/root&gt;'
+            var table="<table><tr><th>标题1</th><th>标题2</th><th>标题3</th></tr>";
+            var x = xmlDoc.getElementsByTagName("标签名");
+            for (i = 0; i <x.length; i++) {
+                table += "<tr><td>" +
+                x[i].getElementsByTagName("标签名")[0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("标签名")[1].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("标签名")[2].childNodes[0].nodeValue +
+                "</td></tr>";
+            }
+            table += "</table>";
             
-            defined_content = '<pre><code>' + code1 + '\n' + code2 + '</pre></code>'
-            td1.innerHTML = defined_content
+            td1.innerHTML = table
         }
         
         function progress() {
