@@ -40,6 +40,7 @@
             function frame() {
                 if (width == 50) {
                     myFunction();
+                    width++;
                 } 
                 else if (width >= 100) {
                     clearInterval(id);
