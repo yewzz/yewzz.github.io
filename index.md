@@ -21,8 +21,8 @@
             var table = document.getElementById("mytab");
             var td1=table.getElementsByTagName("tr").item(1).getElementsByTagName("td").item(0)
 
-            code = 'print("hello world1)\n
-                    print("hello world2)'
+            code = 'print("hello world1")\n
+                    print("hello world2")'
             defined_content = '<pre>' + code + '</pre>'
             td1.innerHTML = defined_content
         }
