@@ -127,7 +127,7 @@
         </thead>
         <tbody>
         <tr>
-            <td width="800px" height="400px"></td>
+            <td width="800px" height="400px" style="text-align:left"></td>
             <!-- <td width="400px" height="400px"></td>
             <td width="400px" height="400px"></td> -->
 
