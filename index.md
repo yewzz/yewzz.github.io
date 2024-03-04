@@ -24,8 +24,8 @@
         }
 
         function myFunction2() {
-            var table = document.getElementById("mytab");
-            var td1=table.getElementsByTagName("tr").item(1).getElementsByTagName("td").item(1)
+            var table = document.getElementById("mytab2");
+            var td1=table.getElementsByTagName("tr").item(1).getElementsByTagName("td").item(0)
 
             code1 = 'print("hello world3")'
             code2 =  'print("hello world4")'
@@ -38,11 +38,23 @@
             var width = 0;
             var id = setInterval(frame, 10);
             function frame() {
-                if (width == 50) {
+                if (width >= 100) {
+                    clearInterval(id);
                     myFunction();
+                }
+                else {
                     width++;
-                } 
-                else if (width >= 100) {
+                    bar.style.width = width + '%';
+                }
+            }
+        }
+
+        function progress() {
+            var bar = document.getElementById("progress2");
+            var width = 0;
+            var id = setInterval(frame, 10);
+            function frame() {
+                if (width >= 100) {
                     clearInterval(id);
                     myFunction2();
                 }
@@ -59,17 +71,17 @@
 
 ## 模型演示 
 <form  method="get">
-  <p><input type="text" name="fname" value="请输入..." style="width: 600px;height:200px" />   <button style="width:200px; height:200px; border: none; border-radius: 10px; font-family: sans-serif;" type="button" onclick='progress()' >运行</button></p>
+  <p><input type="text" name="fname" value="请输入..." style="width: 600px;height:200px; margin-left:100px" />   <button style="width:200px; height:200px; border: none; border-radius: 10px; font-family: sans-serif;" type="button" onclick='progress()' >运行</button></p>
  
   <!-- <input type="submit" value="Submit" /> -->
 </form>
 
 
-<div class="progress-bar" style="margin-top:10px; margin-bottom:20px; margin-left:50px">
+<div class="progress-bar" style="margin-top:10px; margin-bottom:20px; margin-left:100px">
   <div class="progress" id="progress1"></div>
 </div>
 
-<div style="margin-left:50px">
+<div style="margin-left:100px">
     <table style='width: 100%;' id='mytab'>
         <thead>
         <tr>
@@ -89,13 +101,15 @@
     </table>
 </div>
 
-<div class="progress-bar" style="margin-top:10px; margin-bottom:20px; margin-left:50px">
+
+
+ <button style="width:800px; height:50px; border: none; border-radius: 10px; font-family: sans-serif;margin-left:50px" type="button" onclick='progress2()' >转化</button>
+
+ <div class="progress-bar" style="margin-top:10px; margin-bottom:20px; margin-left:100px">
   <div class="progress" id="progress2"></div>
 </div>
 
- <button style="width:800px; height:50px; border: none; border-radius: 10px; font-family: sans-serif;margin-left:50px" type="button" onclick='progress()' >转化</button>
-
-<div style="margin-left:50px">
+<div style="margin-left:100px">
     <table style='width: 100%;' id='mytab2'>
         <thead>
         <tr>
