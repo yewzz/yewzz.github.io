@@ -22,6 +22,20 @@
             var td1=table.getElementsByTagName("tr").item(1).getElementsByTagName("td").item(1)
             td1.innerHTML = '运行的结果'
         }
+
+        function progress() {
+            var bar = document.querySelector('.progress');
+            var width = 0;
+            var id = setInterval(frame, 10);
+            function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+            } else {
+                width++;
+                bar.style.width = width + '%';
+            }
+        }
+  }
 </script>
 
 
@@ -33,7 +47,7 @@
   <p>输入: <input type="text" name="fname" style="width: 550px;" /></p>
   <!-- <input type="submit" value="Submit" /> -->
 </form>
-<button type="button" onclick='myFunction()'>运行</button>
+<button type="button" onclick='myFunction(); progress()'>运行</button>
 
 <div class="progress-bar">
   <div class="progress"></div>
